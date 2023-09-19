@@ -1,8 +1,9 @@
 export default function Footer (){
     return (
         <footer>
-            <img src="" />
-            <ul>
+            <img src={require('../assets/restaurant.jpg')}/>
+            <ul>    
+                <li>Doormat Navigation</li>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Reservations</a></li>
@@ -10,11 +11,13 @@ export default function Footer (){
                 <li><a href="">Login</a></li>
             </ul>
             <ul>
+                <li>Contact</li>
                 <li>Address</li>
                 <li>Phone Number</li>
                 <li>E-mail</li>
             </ul>
             <ul>
+                <li>Social Media Links</li>
                 <li><a href="">Instagram</a></li>
                 <li><a href="">TikTok</a></li>
                 <li><a href="">Facebook</a></li>

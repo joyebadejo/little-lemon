@@ -7,8 +7,9 @@ export default function About (){
                 <h3>Chicago</h3>
                 <p>Lorem ipsum</p>
             </div>
-            <div>
-                <img src=""/>
+            <div id="about-images">
+                <img src={require('../../assets/MarioAndAdrianA.jpg')}/>
+                <img src={require('../../assets/restaurantChefB.jpg')}/>
             </div>
         </div>
     )

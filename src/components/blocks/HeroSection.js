@@ -9,7 +9,7 @@ export default function HeroSection (){
                 <button>Reserve a table</button>
             </div>
             <div>
-                <img src=""/>
+                <img src={require('../../assets/restauranfood.jpg')}/>
             </div>
         </div>
     )

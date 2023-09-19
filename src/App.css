@@ -49,6 +49,19 @@
   font-size: 16px;
 }
 
+button {
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 1em;
+  width: 140px;
+  height: 40px;;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: #d6b510;
+}
+
 header {
   min-height: 7vh;
   background-color: #EDEFEE;
@@ -86,6 +99,12 @@ main {
   flex: 1
 }
 
+#homepage div:nth-child(n+2) {
+  padding-top: 2em;
+  padding-right: 7em;
+  padding-left: 7em
+}
+
 h1{
   font-size: 40px;
 }
@@ -94,23 +113,33 @@ h1{
   background-color: #495E57;
   color: #fff;
   display: flex;
+  padding: 1em 2em 1em 2em;
+}
+
+#hero-section img {
+  /* height: 50%; */
+  width: 200px;
+  margin-bottom: -3em;
+  border-radius: 1em;
 }
 
 .main-button{
   background-color: #F4CE14;
 }
 
-#hero-section img {
-  border-radius: 2em;
-}
-
 #hero-section h1{
   color: #F4CE14;
 }
 
+
 #specialsTop{
   display: flex;
   flex-direction: row;
+  /* justify-content: center; */
+}
+
+#specialsTop button{
+  margin-left: auto;
 }
 .card {
   /* line-height: 1.5px; */
@@ -135,12 +164,41 @@ p {
 }
 
 #testimonials{
-  background-color: #FBDABB
+  background-color: #FBDABB;
+  padding-bottom: 5em;
+}
+
+#about-section{
+  display: flex;
+}
+
+#about-section h2 {
+  color: #F4CE14;
+}
+
+#about-section img {
+  width: 120px;
+  height: 150px;
+  border-radius: .6em;
+  object-fit: cover;
+}
+
+#about-images{
+  display: grid;
+  flex-direction: row-reverse;
+}
+
+#about-images img:nth-child(1) {
+  margin-bottom: -4em;
+}
+
+#about-images img:nth-child(2) {
+  margin-left: -6em;
 }
 
 footer {
   max-height: 100%;
-  height: 14vh;
+  /* height: 14vh; */
   background-color: #495E57;
   display: flex;
   flex-direction: row;
@@ -148,8 +206,27 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   color: #fff;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.5em;
+}
+
+footer ul {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-self: start;
+}
+
+footer ul li:nth-child(1) {
+  font-weight: bold;
+  padding-bottom: .7em;
+}
+
+footer img {
+  width: 25%;
+  padding: 2em 2em 2em 2em;
+  border-radius: 2.5em;
 }
 
 footer a:link, footer a:visited, footer a:hover, footer a:active{
