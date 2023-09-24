@@ -6,7 +6,7 @@ import BookingPage from "./BookingPage"
 export default function Nav(){
     return (
         <nav>
-            <img src="" />
+            <img src={require('../assets/Logo.png')} />
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><a href="">About</a></li>
