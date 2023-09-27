@@ -6,7 +6,7 @@ export default function ReviewCard (props){
         starArray.push(star);
     }
     return (
-        <div id='reviewCard'>
+        <div id='reviewCard' className="rounded">
             <section>{starArray}</section>
             <section>
                 <img src={require(('../../assets/'+props.review.photo))}/>
