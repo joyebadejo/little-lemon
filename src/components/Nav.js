@@ -10,7 +10,7 @@ export default function Nav(){
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><a href="">About</a></li>
-                <li><Link to="/BookingPage">Reservations</Link></li>
+                <li><Link to="/BookingPage" data-testid="bookingsLink">Reservations</Link></li>
                 <li><a href="">Order Online</a></li>
                 <li><a href="">Login</a></li>
             </ul>

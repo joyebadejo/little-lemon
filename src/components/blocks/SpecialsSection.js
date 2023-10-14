@@ -24,7 +24,7 @@ export default function SpecialsSection (){
     ]
 
     let specialsList = currSpecials.map((item)=>{
-        return <Special special={item}/>
+        return <Special special={item} key={item.name}/>
     })
 
     return (

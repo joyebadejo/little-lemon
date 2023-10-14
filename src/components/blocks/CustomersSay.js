@@ -32,7 +32,7 @@ export default function CustomersSay (){
     ]
 
     let reviewList = latestReviews.map((review)=>{
-        return <ReviewCard review={review}/>
+        return <ReviewCard review={review} key={review.name}/>
     })
 
     return (
