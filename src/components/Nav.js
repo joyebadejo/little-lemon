@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import Homepage from "./Homepage"
 import BookingPage from "./BookingPage"
 
@@ -8,11 +8,11 @@ export default function Nav(){
         <nav>
             <img src={require('../assets/Logo.png')} />
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><a href="">About</a></li>
-                <li><Link to="/BookingPage" data-testid="bookingsLink">Reservations</Link></li>
-                <li><a href="">Order Online</a></li>
-                <li><a href="">Login</a></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><a href="/">About</a></li>
+                <li><NavLink to="/BookingPage" data-testid="bookingsLink">Reservations</NavLink></li>
+                <li><a href="/">Order Online</a></li>
+                <li><a href="/">Login</a></li>
             </ul>
         </nav>
     )

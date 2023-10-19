@@ -9,16 +9,11 @@ let today = new Date();
 const updateTimes = (data) =>{
     let newTimes = ((data == undefined) ?  [] : (data.map(x => x)));
     newTimes.unshift("")
-    //console.log(newTimes)
     return (newTimes)
-    // return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
 }
 
 const initializeTimes = (times) =>{
-        //return ["15:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
         let newTimes = ((times == undefined) ?  ["14:00", "15:00", "16:00"] : (times.map(x => x)));
-        //let newTimes0 = newTimes.unshift("")
-
         return newTimes;
 }
 
@@ -48,8 +43,6 @@ useEffect(() => {
         let todayArray = today.split("/")
         let todayString = `${todayArray[2]}`+"-"+`${todayArray[0]}`+"-"+`${todayArray[1]}`
         const data = await fetchAPI(todayString);
-        //console.log("API fetched init data: " + data)
-        // let initTimes = ((data == undefined) ?  [] : (data.map(x => x)));
        dispatch({type: 'update_times', payload: data});
     }
     fetchTimes()
@@ -64,8 +57,8 @@ useEffect(() => {
     } else {
         return (
             <div id="bookingPage">
-                {/* <BookingForm times={availableTimes} setTimes={setAvailableTimes}/> */}
-                <h2 role="heading">Reserve a table!</h2>
+                <h2 data-testid="bookingsHeader" role="banner">Join us for a meal!</h2>
+                <p>Select a date to find available times</p>
                 <BookingForm times={availableTimes} updateTimes={dispatch} submitFunc={submitForm}/>
             </div>
       )

@@ -7,27 +7,27 @@ export default function CustomersSay (){
             name: "Mark",
             stars: 4,
             review: "",
-            photo:"greekSalad.jpg"
+            photo:"mark.jpeg"
         },
         {
             name: "Jasmine",
             stars: 5,
             review: "",
-            photo:"bruchetta.svg"
+            photo:"jasmine.jpeg"
         },
         {
             name: "Phillipe",
             stars: 5,
             description: "",
             review: "",
-            photo:"bruchetta.svg"
+            photo:"phillipe.jpeg"
         },
         {
             name: "Miriam",
             stars: 4,
             description: "",
             review: "",
-            photo:"bruchetta.svg"
+            photo:"miriam.jpeg"
         },
     ]
 
