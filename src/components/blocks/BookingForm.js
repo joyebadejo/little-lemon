@@ -75,7 +75,7 @@ export default function BookingForm (props) {
 
     return (
         <form id="bookingForm" className="rounded" onSubmit={handleSubmit}>
-            <img src={require('../../assets/Logo.png')} />
+            <img src={require('../../assets/Logo.png')} alt="Little Lemon Logo"/>
             <section id="formContent">
 
                 <h3>Select a table</h3>

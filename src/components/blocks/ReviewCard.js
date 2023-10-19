@@ -6,11 +6,12 @@ export default function ReviewCard (props){
         starArray.push(<img src={require(('../../assets/star.png'))} key={i}/>)
     }
     let ariaLabel = "Read "+props.review.name+"'s Review";
+    let altText = props.review.name + "'s profile photo"
     return (
         <div id='reviewCard' className="rounded">
             <section id="reviewStars">{starArray}</section>
             <section>
-                <img src={require(('../../assets/'+props.review.photo))}/>
+                <img src={require(('../../assets/'+props.review.photo))} alt={altText}/>
                 <span>{props.review.name}</span>
             </section>
             <section><a href="" aria-label={ariaLabel}>{"Review >"}</a></section>

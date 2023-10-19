@@ -1,7 +1,7 @@
 export default function Footer (){
     return (
         <footer>
-            <img src={require('../assets/restaurant.jpg')}/>
+            <img src={require('../assets/restaurant.jpg')} alt="Little Lemon back patio dining area"/>
             <ul>    
                 <li>Doormat Navigation</li>
                 <li><a href="">Home</a></li>

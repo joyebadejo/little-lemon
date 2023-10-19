@@ -12,7 +12,7 @@ export default function HeroSection (){
                     <Link to="/BookingPage"><button>Reserve a table</button></Link>
                 </div>
                 <div>
-                    <img src={require('../../assets/restauranfood.jpg')}/>
+                    <img src={require('../../assets/restauranfood.jpg')} alt="Chef Adrian holding Bruschetta"/>
                 </div>
             </div>
         </div>

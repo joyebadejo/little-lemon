@@ -6,7 +6,7 @@ import BookingPage from "./BookingPage"
 export default function Nav(){
     return (
         <nav>
-            <img src={require('../assets/Logo.png')} />
+            <img src={require('../assets/Logo.png')} alt="Little Lemon Logo"/>
             <ul>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><a href="/">About</a></li>
